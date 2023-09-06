@@ -1,0 +1,3 @@
+MONGO_URL=asfdsf
+TOKEN_HEADER_KEY=testing
+PORT=4000
