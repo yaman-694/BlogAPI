@@ -62,6 +62,7 @@ const createSessionController = async (req: CustomRequest, res: Response): Promi
         } else {
             res.status(400).json({ body: { message: "Enter credentials" } });
         }
+        console.log(user)
         if (
             user !== null && (await bcrypt.compare(password as string, user.password))) {
             const exitingActiveSession = await UserSessionModel.find({
